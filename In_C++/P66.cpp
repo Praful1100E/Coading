@@ -1,11 +1,3 @@
-/*
- * Segment tree node.
- * It maintains:
- *  - [l, r] : the covered index range
- *  - mn     : minimum prefix sum in this range
- *  - mx     : maximum prefix sum in this range
- *  - lazy   : lazy propagation value (range add)
- */
 class Node {
 public:
     int l = 0, r = 0;
@@ -13,11 +5,6 @@ public:
     int lazy = 0;
 };
 
-/*
- * Segment Tree that supports:
- *  1. Range add
- *  2. Query the smallest index whose prefix sum equals a given value
- */
 class SegmentTree {
 public:
     SegmentTree(int n) {
